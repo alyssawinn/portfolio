@@ -17,7 +17,6 @@ body {
 }
 
 /*start header styles*/
-
 header {
     background-color: var(--primary-color);
     padding: 10px 20px;
@@ -65,17 +64,14 @@ header nav ul li a {
 header nav ul li a:hover {
     text-decoration: underline;
 }
-
 /*end header styles*/
 
 /*start flex styles*/
-
-.flex-row {
+.flex-container {
     background-color: #fff;
-    padding: 5px 0;
+    padding: 5px;
     display: flex;
 }
-
 /*end flex styles*/
 
 /*start about styles*/
@@ -83,9 +79,19 @@ header nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 20%;
+    flex-basis: 20%;
     margin: 10px;
     background-color: var(--secondary-color);
+}
+
+.about img {
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border: 2px solid #000;
+    margin-top: 20px;
 }
 
 .about h2 {
@@ -101,16 +107,6 @@ header nav ul li a:hover {
     padding: 5px 20px 20px 20px;
     text-align: center;
 }
-
-.about img {
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    border: 2px solid black;
-    margin-top: 20px;
-}
 /*end about styles*/
 
 /*start projects styles*/
@@ -118,27 +114,52 @@ header nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 80%;
-    margin: 10px;
+    flex-basis: 80%;
+    margin: 10px 10px 10px 0;
 }
 
-.projects h2 {
+.projects-header {
+    display: flex;
+    align-items: flex-start;
+    flex-basis: 100%;
+    margin: 0 5px 0 10px;
+}
+.projects-header h2 {
     color: #000;
     font-size: 50px;
-    width: 100%;
 }
 
 .card {
     display: flex;
     flex-wrap: wrap;
-    width: 30%;
+    flex-basis: 31%;
     background-color: var(--tertiary-color);
-    margin: 10px;
-
+    margin: 10px 5px 0 10px;
 }
 
-.main-project {
+.card a {
     width: 100%;
+    background-size: cover;
+    background-position: center;
+    text-decoration: none;
+}
+
+.card h3 {
+    padding: 10px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.main-card {
+    flex-basis: 100%;
+}
+
+.main-card a {
+    background-image: url('../assets/images/hero-bg.jpg');
+}
+
+.card-1 a {
+    background-image: url('../assets/images/digital-marketing-meeting.jpg');
 }
 
 /*end projects styles*/
