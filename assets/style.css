@@ -89,6 +89,7 @@ header nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-content: flex-start;
     flex-basis: 20%;
     margin: 10px;
     background-color: var(--secondary-color);
@@ -111,11 +112,13 @@ header nav ul li a:hover {
     text-align: center;
     font-size: 55px;
     color: rgb(72, 110, 59);
+    display: flex;
 }
 
 .about p {
-    padding: 5px 20px 20px 20px;
+    padding: 5px 20px 20px 30px;
     text-align: center;
+    line-height: 1.5;
 }
 /*end about styles*/
 
@@ -159,6 +162,10 @@ header nav ul li a:hover {
     padding: 10px;
     color: #fff;
     font-size: 20px;
+}
+
+.card:hover {
+    opacity: 0.75;
 }
 
 .main-card {
