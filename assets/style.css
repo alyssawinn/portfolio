@@ -363,7 +363,7 @@ header nav ul li a:hover {
     }
 
     .contact-information {
-        flex-basis: 50%;
+        flex-basis: 100%;
     }
 
     .contact-form {
@@ -391,6 +391,10 @@ header nav ul li a:hover {
     .card-1, .card-2, .card-3 {
         border-top: 0;
         flex-basis: 100%;
+    }
+
+    .contact {
+        padding-left: 0;
     }
 
 }
