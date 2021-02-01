@@ -3,6 +3,7 @@
     --secondary-color: rgb(172, 221, 182);
     --tertiary-color: rgb(238, 169, 203);
     --contact-color: rgb(193, 248, 250);
+    --contact-color-2: rgb(9, 85, 116);
 }
 
 * {
@@ -39,7 +40,7 @@ header h1 {
 
 header a {
     text-decoration: none;
-    color: #fff;
+    color: rgb(129, 11, 139);
 }
 
 header nav {
@@ -72,6 +73,15 @@ header nav ul li a:hover {
     padding: 5px;
     display: flex;
 }
+
+.main-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    flex-basis: 80%;
+    margin: 10px 10px 10px 0;
+}
 /*end flex styles*/
 
 /*start about styles*/
@@ -90,7 +100,7 @@ header nav ul li a:hover {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    border: 2px solid #000;
+    border: 2px solid #fff;
     margin-top: 20px;
 }
 
@@ -99,8 +109,8 @@ header nav ul li a:hover {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    font-size: 30px;
-    color: #000;
+    font-size: 55px;
+    color: rgb(72, 110, 59);
 }
 
 .about p {
@@ -114,18 +124,17 @@ header nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    flex-basis: 80%;
-    margin: 10px 10px 10px 0;
+    align-content: flex-start;
+    flex-basis: 100%;
+    background-color: var(--tertiary-color);
+    padding: 10px;
 }
-
 .projects-header {
-    display: flex;
-    align-items: flex-start;
     flex-basis: 100%;
     margin: 0 5px 0 10px;
 }
 .projects-header h2 {
-    color: #000;
+    color: rgb(148, 37, 115);
     font-size: 50px;
 }
 
@@ -133,8 +142,10 @@ header nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     flex-basis: 31%;
-    background-color: var(--tertiary-color);
+    background-color: rgb(190, 190, 190);
     margin: 10px 5px 0 10px;
+    height: 200px;
+    border: 2px solid #fff;
 }
 
 .card a {
@@ -164,6 +175,141 @@ header nav ul li a:hover {
 
 /*end projects styles*/
 
+/*start contact styles*/
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    flex-basis: 100%;
+    margin: 20px 0 0 0;
+    padding: 5px 0 25px 10px;
+    background-color: var(--contact-color);
+}
+
+.contact-header {
+    flex-basis: 100%;
+    margin: 10px 5px 0 10px;
+}
+.contact-header h2 {
+    color: var(--contact-color-2);
+    font-size: 50px;
+}
+
+.contact h3 {
+    margin: 0 0 0 20px;
+    color: var(--contact-color-2);
+}
+
+.contact-details {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 100%;
+    margin: 10px 10px;
+    padding: 10px;
+}
+
+.contact-information {
+    background-color: var(--contact-color-2);
+    flex-basis: 25%;
+    margin: 0 10px;
+    padding: 20px;
+    border: 2px solid #fff;
+    line-height: 1.5em;
+}
+
+.contact-information p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.contact-information p > a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 20px 10px 0 0;
+    border: 1px solid #fff;
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+  .fa-pinterest {
+    background: #cb2027;
+    color: white;
+  }
+
+.contact-form {
+    background-color: var(--contact-color-2);
+    flex-basis: 70%;
+    margin: 0 10px;
+    padding: 20px;
+    border: 2px solid #fff;
+    line-height: 20px;
+}
+
+.contact-form h4 {
+    font-weight: normal;
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.contact-form label {
+    display: none;
+}
+
+.form-input {
+    border: 1px solid #fff;
+    display: block;
+    padding: 7px 15px;
+    font-size: 15px;
+    color: var(--contact-color-2);
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    margin: 15px 0;
+}
+
+.form-input:focus, .contact-form button:focus {
+    background-color: rgba(255, 255, 255, 1);
+    outline: none;
+}
+
+.contact-form button {
+    color: #fff;
+    background-color: var(--contact-color-2);
+    border: 1px solid #fff;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.contact-form button:hover {
+    color: var(--contact-color-2);
+    background-color: var(--contact-color);
+    border: 1px solid var(--contact-color);
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    font-weight: bold;
+}
+
+/*end contact styles*/
+
 /*start media queries*/
 @media screen and (max-width: 1024px) {
    header {
@@ -186,6 +332,67 @@ header nav ul li a:hover {
    header nav ul li a {
        font-size: 30px;
    }
+
+   .flex-container {
+       flex-wrap: wrap;
+       margin: 0;
+       padding: 0;
+   }
+
+   .about, .projects, .contact, .main-section {
+       flex-basis: 100%;
+       margin: 0;
+   }
+
+   .about img {
+       height: 300px;
+       width: auto;
+       margin: 20px 0 0 30px;
+       object-fit: contain;
+       align-self: flex-start;
+   }
+
+   .about p {
+       flex: 1 1 auto;
+   }
+}
+
+@media screen and (max-width: 900px) {
+    .contact-details {
+        flex-wrap: wrap;
+    }
+
+    .contact-information {
+        flex-basis: 50%;
+    }
+
+    .contact-form {
+        flex-basis: 100%;
+    }
+
+    .contact-form {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .projects {
+        justify-content: space-around;
+    }
+    
+    .card {
+        margin: 0;
+    }
+
+    .main-card {
+        margin-top: 10px;
+    }
+
+    .card-1, .card-2, .card-3 {
+        border-top: 0;
+        flex-basis: 100%;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -202,6 +409,20 @@ header nav ul li a:hover {
     header nav ul li a {
         font-size: 20px;
         padding: 10px 0;
+    }
+
+    .about span {
+        width: 100%;
+    }
+
+    .about img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact-details {
+        margin: 10px 0;
+        padding: 0;
     }
 }
 
