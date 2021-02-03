@@ -121,6 +121,7 @@ header nav ul li a:hover {
     text-align: center;
     line-height: 1.5;
     display: inline-block;
+    font-size: 17px;
 }
 /*end about styles*/
 
@@ -354,16 +355,18 @@ header nav ul li a:hover {
    }
 
    .about img {
-       height: 300px;
-       width: auto;
-       margin: 20px 0 0 30px;
-       object-fit: contain;
-       align-self: flex-start;
+        height: 300px;
+        width: auto;
+        margin: 20px 0 0 30px;
+        object-fit: contain;
+        align-self: flex-start;
+        margin-left: auto;
+        margin-right: auto;
    }
 
-   .about p {
-       flex: 1 1 auto;
-   }
+   .about span {
+    width: 100%;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -372,7 +375,7 @@ header nav ul li a:hover {
     }
 
     .contact-information {
-        flex-basis: 100%;
+        flex-basis: 50%;
     }
 
     .contact-form {
@@ -412,6 +415,10 @@ header nav ul li a:hover {
     header nav ul li a {
         padding: 10px 5px;
     }
+
+    .contact-information {
+        flex-basis: 100%;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -422,15 +429,6 @@ header nav ul li a:hover {
     header nav ul li a {
         font-size: 20px;
         padding: 10px 0;
-    }
-
-    .about span {
-        width: 100%;
-    }
-
-    .about img {
-        margin-left: auto;
-        margin-right: auto;
     }
 
     .contact-details {
