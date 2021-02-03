@@ -113,14 +113,12 @@ header nav ul li a:hover {
 .about h2 {
     font-size: 55px;
     color: rgb(72, 110, 59);
-    display: inline-block;
 }
 
 .about p {
     padding: 5px 20px 20px 20px;
     text-align: center;
     line-height: 1.5;
-    display: inline-block;
     font-size: 17px;
 }
 /*end about styles*/
@@ -133,7 +131,7 @@ header nav ul li a:hover {
     align-content: flex-start;
     flex-basis: 100%;
     background-color: var(--tertiary-color);
-    padding: 15px 10px 20px 10px;
+    padding: 20px 10px 35px 10px;
 }
 .projects-header {
     flex-basis: 100%;
@@ -193,7 +191,7 @@ header nav ul li a:hover {
     align-content: flex-start;
     flex-basis: 100%;
     margin: 20px 0 0 0;
-    padding: 15px 0 25px 10px;
+    padding: 20px 0 35px 10px;
     background-color: var(--contact-color);
 }
 
