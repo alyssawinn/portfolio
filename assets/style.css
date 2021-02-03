@@ -116,7 +116,7 @@ header nav ul li a:hover {
 }
 
 .about p {
-    padding: 5px 20px 20px 20px;
+    padding: 20px;
     text-align: center;
     line-height: 1.5;
     font-size: 17px;
@@ -131,7 +131,7 @@ header nav ul li a:hover {
     align-content: flex-start;
     flex-basis: 100%;
     background-color: var(--tertiary-color);
-    padding: 20px 10px 35px 10px;
+    padding: 20px 10px 45px 10px;
 }
 .projects-header {
     flex-basis: 100%;
@@ -191,7 +191,7 @@ header nav ul li a:hover {
     align-content: flex-start;
     flex-basis: 100%;
     margin: 20px 0 0 0;
-    padding: 20px 0 35px 10px;
+    padding: 25px 0 35px 10px;
     background-color: var(--contact-color);
 }
 
@@ -353,9 +353,9 @@ header nav ul li a:hover {
    }
 
    .about img {
-        height: 300px;
+        height: 400px;
         width: auto;
-        margin: 20px 0 0 30px;
+        margin: 20px 0 20px 30px;
         object-fit: contain;
         align-self: flex-start;
         margin-left: auto;
@@ -363,7 +363,19 @@ header nav ul li a:hover {
    }
 
    .about span {
-    width: 100%;
+    width: 40%;
+    margin: auto;
+    }
+
+    .about-text {
+        width: 60%;
+        margin: 45px auto;
+        text-align: left;
+    }
+
+    .about p {
+        padding: 20px 20px 20px 0;
+        text-align: left;
     }
 }
 
@@ -409,9 +421,24 @@ header nav ul li a:hover {
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 670px) {
     header nav ul li a {
         padding: 10px 5px;
+    }
+
+   .about span {
+    width: 100%;
+    }
+
+    .about-text {
+        width: 75%;
+        margin: 0 auto 15px auto;
+        text-align: center;
+    }
+
+    .about p {
+        padding: 20px;
+        text-align: center;
     }
 
     .contact-information {
@@ -428,6 +455,16 @@ header nav ul li a:hover {
         font-size: 20px;
         padding: 10px 0;
     }
+
+    .about img {
+        height: 400px;
+        width: auto;
+        margin: 20px 0 20px 30px;
+        object-fit: contain;
+        align-self: flex-start;
+        margin-left: auto;
+        margin-right: auto;
+   }
 
     .contact-details {
         margin: 10px 0;
