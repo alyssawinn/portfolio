@@ -174,11 +174,15 @@ header nav ul li a:hover {
 }
 
 .main-card a {
-    background-image: url('../assets/images/hero-bg.jpg');
+    background-image: url('../assets/images/timer.jpg');
 }
 
 .card-1 a {
-    background-image: url('../assets/images/digital-marketing-meeting.jpg');
+    background-image: url('../assets/images/computer-code.jpg');
+}
+
+.card-2 a {
+    background-image: url('../assets/images/hero-bg.jpg');
 }
 
 /*end projects styles*/
@@ -251,14 +255,10 @@ header nav ul li a:hover {
     color: white;
   }
 
-  .fa-instagram {
-    background: #125688;
-    color: white;
-  }
-
-  .fa-pinterest {
-    background: #cb2027;
-    color: white;
+  .resume {
+      font-size: 20px;
+      margin-top: 10px;
+      color: #fff;
   }
 
 .contact-form {
