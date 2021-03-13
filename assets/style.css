@@ -174,7 +174,7 @@ header nav ul li a:hover {
 }
 
 .main-card a {
-    background-image: url('../assets/images/timer.jpg');
+    background-image: url('../assets/images/movie.jpg');
 }
 
 .card-1 a {
@@ -183,6 +183,10 @@ header nav ul li a:hover {
 
 .card-2 a {
     background-image: url('../assets/images/hero-bg.jpg');
+}
+
+.card-3 a {
+    background-image: url('../assets/images/timer.jpg');
 }
 
 /*end projects styles*/
