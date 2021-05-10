@@ -174,15 +174,15 @@ header nav ul li a:hover {
 }
 
 .main-card a {
-    background-image: url('../assets/images/movie.jpg');
+    background-image: url('../assets/images/terrarium.jpg');
 }
 
 .card-1 a {
-    background-image: url('../assets/images/computer-code.jpg');
+    background-image: url('../assets/images/movie.jpg');
 }
 
 .card-2 a {
-    background-image: url('../assets/images/hero-bg.jpg');
+    background-image: url('../assets/images/computer-code.jpg');
 }
 
 .card-3 a {
